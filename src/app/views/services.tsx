@@ -1,6 +1,6 @@
 import React from 'react';
 import ServicesCard from '@/modules/services_card';
-import { Building2, ShoppingCart, Server, Globe, Router, Search, Shield } from "lucide-react";
+import { Building2, ShoppingCart, Server, MonitorSmartphone, TabletSmartphone, Search, AppWindow } from "lucide-react";
 
 const services = [
     {
@@ -11,27 +11,27 @@ const services = [
     {
         title: 'Landing Pages',
         description: 'Diseñamos páginas de aterrizaje optimizadas para convertir visitantes en clientes, enfocadas en tus objetivos específicos.',
-        icon: Server,
+        icon: AppWindow,
     },
     {
         title: 'E-Commerce',
         description: 'Desarrollamos tiendas online personalizadas que maximizan ventas y mejoran la experiencia del usuario.',
-        icon: Building2,
+        icon: ShoppingCart,
     },
     {
         title: 'Sistemas de Gestión',
         description: 'Implementamos sistemas a medida que automatizan y optimizan los procesos internos de tu empresa.',
-        icon: Globe,
+        icon: MonitorSmartphone,
     },
     {
         title: 'Aplicaciones Progresivas',
         description: 'Desarrollamos aplicaciones que combinan lo mejor del web y móvil, ofreciendo experiencias rápidas y accesibles.',
-        icon: Router,
+        icon: TabletSmartphone,
     },
     {
         title: 'Hosting, VPN y Dominios',
         description: 'Ofrecemos servicios integrales de hosting, VPN y dominios para asegurar una presencia en línea segura y eficiente.',
-        icon: Search,
+        icon: Server,
     },
 ];
 

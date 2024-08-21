@@ -4,6 +4,7 @@ import AnimatedBg from "@/modules/animated_bg";
 import HeroSection from "../views/herosection";
 import Services from "../views/services";
 import Stats from "../views/stats";
+import Clientes from "../views/clientes";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
         <Stats/>
         <Services/>
         <HeroParallaxDemo/>
+        <Clientes/>
     </NextUIProvider>
   );
 }

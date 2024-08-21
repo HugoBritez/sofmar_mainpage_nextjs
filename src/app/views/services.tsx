@@ -33,6 +33,7 @@ const services = [
         description: 'Ofrecemos servicios integrales de hosting, VPN y dominios para asegurar una presencia en línea segura y eficiente.',
         icon: Server,
     },
+    
 ];
 
 export default function Services() {

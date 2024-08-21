@@ -9,7 +9,7 @@ interface ServicesCardProps {
 
 export default function ServicesCard({ title, description, icon: Icon }: ServicesCardProps) {
     return (
-        <div className="card bg-white w-96 shadow-xl duration-300 hover:scale-105 group">
+        <div className="card bg-gray-50 w-96 shadow-xl duration-300 hover:scale-105 group">
             <figure>
                 <Icon size={72} className="text-[#2f2b80] group-hover:text-[#84AF30] duration-300"/>
             </figure>

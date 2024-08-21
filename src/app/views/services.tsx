@@ -41,16 +41,22 @@ export default function Services() {
         <div className="my-16">
             <h1 className="text-center text-4xl">Cuales son nuestros servicios</h1>
             <div className="flex flex-wrap justify-center my-16">
-            <div className="justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-9/12">
-                {services.map((service, index) => (
-                <ServicesCard 
-                    key={index} 
-                    title={service.title} 
-                    description={service.description} 
-                    icon={service.icon}
-                />
-                ))}
+                <div className="justify-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-9/12">
+                    {services.map((service, index) => (
+                    <ServicesCard 
+                        key={index} 
+                        title={service.title} 
+                        description={service.description} 
+                        icon={service.icon}
+                    />
+                    ))}
+                </div>
             </div>
+            <div className="flex w-full justify-center mt-4 md:mt-8">
+                    <button className="text-lg md:text-xl font-semibold w-36 md:w-48 h-12 md:h-16 rounded-full bg-[#2F2B80]
+                        hover:bg-lime-500 text-white transition duration-300 ease-in-out">
+                        Saber más
+                    </button>
             </div>
         </div>
     );

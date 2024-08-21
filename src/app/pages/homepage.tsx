@@ -16,7 +16,6 @@ export default function HomePage() {
         <Destacadas/>
         <Services/>
         <HeroParallaxDemo/>
-        <Clientes/>
     </NextUIProvider>
   );
 }

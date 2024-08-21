@@ -16,7 +16,7 @@ export default function Stats() {
                 Impulsa tu presencia en línea con nuestras soluciones integrales. Nos enfocamos en optimizar cada aspecto de tu negocio digital, desde el desarrollo hasta la gestión, asegurando un crecimiento constante y sostenible.
             </h1>
 
-            <div className="w-full md:w-3/5 my-8 p-4 md:px-16 md:py-16 border border-black rounded-xl flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+            <div className="w-full md:w-3/5 my-8 p-4 md:px-16 md:py-16 border border-gray-500 rounded-xl flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 bg-gray-50">
                 <div className="flex space-x-2 items-center">
                     <h1 className="text-5xl md:text-7xl">
                         {inView && <CountUp start={0} end={11} duration={2.5} prefix="+" />}

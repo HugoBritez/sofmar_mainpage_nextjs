@@ -5,6 +5,7 @@ import HeroSection from "../views/herosection";
 import Services from "../views/services";
 import Stats from "../views/stats";
 import Clientes from "../views/clientes";
+import Destacadas from "../views/destacadas";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
         <HeroSection/>
         <AnimatedBg/>
         <Stats/>
+        <Destacadas/>
         <Services/>
         <HeroParallaxDemo/>
         <Clientes/>

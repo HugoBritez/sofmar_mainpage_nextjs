@@ -48,13 +48,15 @@ export function ThreeDCardDemo({title, description, image}: destacadasProps) {
           >
             Mirar mas →
           </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-[#2F2B80] dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            Cotizar
-          </CardItem>
+          <a href="https://wa.me/595971271288" target="_blank" rel="noopener noreferrer">
+            <CardItem
+              translateZ={20}
+              as="button"
+              className="px-4 py-2 rounded-xl bg-[#2F2B80] dark:bg-white dark:text-black text-white text-xs font-bold"
+            >
+              Cotizar
+            </CardItem>
+          </a>
         </div>
       </CardBody>
     </CardContainer>

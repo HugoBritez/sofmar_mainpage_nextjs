@@ -18,7 +18,7 @@ export default function Navbar() {
                 <span className="mx-2 md:mx-4">📧 administracion@sofmarsistema.net</span>
                 <span className="mx-2 md:mx-4">📞 0971 271 288 / 0984793176</span>
             </div>
-            <header className="w-full bg-white shadow-lg fixed top-8 z-50">
+            <header className="w-full bg-white shadow-lg fixed top-8 z-50 py-8">
                 <nav className="container mx-auto p-4 flex justify-between items-center">
                     <div className="flex items-center">
                         <Image
@@ -61,12 +61,12 @@ export default function Navbar() {
                                 {label}
                             </a>
                         ))}
-                        <button 
-                            onClick={() => console.log("Contactanos")}
-                            className="bg-[#84AF30] text-white px-6 py-3 rounded hover:bg-[#2F2B80] transition duration-300"
-                        >
-                            Contactanos
-                        </button>
+                        <a href="https://wa.me/595971271288" target="_blank" rel="noopener noreferrer">
+                            <button 
+                                className="bg-[#84AF30] text-white px-6 py-3 rounded hover:bg-[#2F2B80] transition duration-300">
+                                Contactanos
+                            </button>
+                        </a>
                     </div>
                 )}
             </header>

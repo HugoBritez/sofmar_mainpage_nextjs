@@ -23,10 +23,12 @@ export default function Footer() {
                     <Link href="/productos" className="text-lg hover:underline">
                         Productos
                     </Link>
-                    <button 
-                        className="bg-[#84AF30] text-white px-4 py-2 rounded hover:bg-[#2F2B80] transition duration-300">
-                        Contáctanos
-                    </button>
+                    <a href="https://wa.me/595971271288" target="_blank" rel="noopener noreferrer">
+                        <button 
+                            className="bg-[#84AF30] text-white px-4 py-2 rounded hover:bg-[#2F2B80] transition duration-300">
+                            Contáctanos
+                        </button>
+                    </a>
                 </div>
                 <div className="border-l border-gray-600 h-0 md:h-32 w-full md:w-0"></div>
                 <div className="flex flex-col space-y-4 text-center md:text-left">

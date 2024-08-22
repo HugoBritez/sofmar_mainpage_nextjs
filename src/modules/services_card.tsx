@@ -1,4 +1,3 @@
-import React from "react";
 import { LucideIcon } from "lucide-react";
 
 interface ServicesCardProps {
@@ -17,7 +16,11 @@ export default function ServicesCard({ title, description, icon: Icon }: Service
                 <h2 className="card-title">{title}</h2>
                 <p>{description}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn border-0 bg-[#84AF30] text-white hover:bg-[#2F2B80] duration-300">Pedir cotización</button>
+                    <a href="https://wa.me/595971271288" target="_blank" rel="noopener noreferrer">
+                        <button className="btn border-0 bg-[#84AF30] text-white hover:bg-[#2F2B80] duration-300">
+                            Pedir cotización
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>

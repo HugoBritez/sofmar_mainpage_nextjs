@@ -16,7 +16,7 @@ export default function HeroSection() {
                                 Desarrollo Web, <br /> Soluciones en Software,<br /> Hosting y Apps para empresas!
                             </h1>
                             <p className="text-white text-xl md:text-2xl font-light text-center md:text-left mt-4 md:mt-8">
-                                Con tecnologías de última generación y un equipo altamente capacitado,<br/>desarrollamos software y apps para empresas.
+                                Con tecnología de última generación y un equipo altamente capacitado, desarrollamos software y apps para empresas.
                             </p>
                             <div className="flex justify-center md:justify-start mt-4 md:mt-8">
                                 <button className="text-black text-lg md:text-xl font-semibold w-36 md:w-48 h-12 md:h-16 rounded-full bg-white

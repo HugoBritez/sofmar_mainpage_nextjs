@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -18,7 +19,7 @@ export default function Navbar() {
                 <span className="mx-2 md:mx-4">📧 administracion@sofmarsistema.net</span>
                 <span className="mx-2 md:mx-4">📞 0971 271 288 / 0984793176</span>
             </div>
-            <header className="w-full bg-white shadow-lg fixed top-8 z-50 py-8">
+            <header className="w-full bg-white shadow-lg fixed top-8 z-50 lg:py-8">
                 <nav className="container mx-auto p-4 flex justify-between items-center">
                     <div className="flex items-center">
                         <Image
@@ -30,9 +31,9 @@ export default function Navbar() {
                     </div>
                     <div className="hidden md:flex space-x-12 items-center">
                         {links.map(({ href, label }) => (
-                            <a key={`${href}${label}`} href={href} className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg">
+                            <Link key={href} href={href} className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg">
                                 {label}
-                            </a>
+                            </Link>
                         ))}
                         <button 
                             onClick={() => console.log("Contactanos")}
@@ -50,23 +51,18 @@ export default function Navbar() {
                     </div>
                 </nav>
                 {isOpen && (
-                    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 transition-transform transform duration-300 ease-in-out">
-                        <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-gray-700 focus:outline-none">
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                    <div className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6">
                         {links.map(({ href, label }) => (
-                            <a key={`${href}${label}`} href={href} className="text-2xl text-gray-700 hover:text-blue-500">
+                            <Link key={href} href={href} className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg">
                                 {label}
-                            </a>
+                            </Link>
                         ))}
-                        <a href="https://wa.me/595971271288" target="_blank" rel="noopener noreferrer">
-                            <button 
-                                className="bg-[#84AF30] text-white px-6 py-3 rounded hover:bg-[#2F2B80] transition duration-300">
-                                Contactanos
-                            </button>
-                        </a>
+                        <button 
+                            onClick={() => console.log("Contactanos")}
+                            className="bg-[#84AF30] text-white px-4 py-2 rounded hover:bg-[#2F2B80] transition duration-300"
+                        >
+                            Contactanos
+                        </button>
                     </div>
                 )}
             </header>

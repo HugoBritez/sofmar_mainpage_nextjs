@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-50 text-gray-600 mt-16 py-12">
+        <footer className="bg-gray-50 text-gray-600 mt-16 py-12 z-[1]">
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-8 px-4">
                 <Image src="/sofmareas.png" width={300} height={250} alt="logo" className="mx-auto md:mx-0" />
                 <div className="border-l border-gray-600 h-0 md:h-32 w-full md:w-0"></div>

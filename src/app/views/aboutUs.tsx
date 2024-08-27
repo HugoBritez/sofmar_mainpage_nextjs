@@ -78,7 +78,7 @@ const TeamMember: React.FC<{ name: string; position: string }> = ({ name, positi
       whileTap={{ scale: 0.95 }}
     >
       <Image
-        src={`/placeholder.svg?text=${name}`}
+        src= "/user-avatar.png"
         alt={name}
         width={192}
         height={192}

@@ -24,7 +24,7 @@ const HideOnScroll = ({ children }: { children: React.ReactNode }) => {
                 window.removeEventListener('scroll', controlNavbar);
             };
         }
-    }, [lastScrollY]);
+    }, [controlNavbar]);
 
     return (
         <div className={`fixed w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>

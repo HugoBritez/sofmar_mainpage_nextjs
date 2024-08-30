@@ -1,13 +1,14 @@
 "use client";
-
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
+import { Link as ScrollLink } from 'react-scroll';
+import { FaTimes } from 'react-icons/fa';
 
 const links = [
-    { href: '/', label: 'Inicio' },
-    { href: '/about', label: 'Nosotros' },
-    { href: '/products', label: 'Productos' },
+    { to: 'home-section', label: 'Inicio' },
+    { to: 'about-section', label: 'Nosotros' },
+    { to: 'products-section', label: 'Productos' },
 ];
 
 export default function Navbar() {
@@ -30,12 +31,18 @@ export default function Navbar() {
                         />
                     </div>
                     <div className="hidden md:flex space-x-12 items-center">
-                        {links.map(({ href, label }) => (
-                            <Link key={href} href={href} className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg">
+                        {links.map(({ to, label }) => (
+                            <ScrollLink
+                                key={to}
+                                to={to}
+                                smooth={true}
+                                duration={500}
+                                className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg cursor-pointer"
+                            >
                                 {label}
-                            </Link>
+                            </ScrollLink>
                         ))}
-                        <button 
+                        <button
                             onClick={() => console.log("Contactanos")}
                             className="bg-[#84AF30] text-white px-4 py-2 rounded hover:bg-[#2F2B80] transition duration-300"
                         >
@@ -52,12 +59,22 @@ export default function Navbar() {
                 </nav>
                 {isOpen && (
                     <div className="fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6">
-                        {links.map(({ href, label }) => (
-                            <Link key={href} href={href} className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg">
+                        <button onClick={() => setIsOpen(false)} className="absolute top-4 right-4 text-gray-700 focus:outline-none">
+                            <FaTimes className="w-8 h-8" />
+                        </button>
+                        {links.map(({ to, label }) => (
+                            <ScrollLink
+                                key={to}
+                                to={to}
+                                smooth={true}
+                                duration={500}
+                                className="text-gray-700 hover:text-blue-500 hover:scale-110 duration-300 text-lg cursor-pointer"
+                                onClick={() => setIsOpen(false)}
+                            >
                                 {label}
-                            </Link>
+                            </ScrollLink>
                         ))}
-                        <button 
+                        <button
                             onClick={() => console.log("Contactanos")}
                             className="bg-[#84AF30] text-white px-4 py-2 rounded hover:bg-[#2F2B80] transition duration-300"
                         >

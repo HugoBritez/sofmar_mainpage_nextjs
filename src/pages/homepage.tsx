@@ -20,7 +20,6 @@ export default function Home() {
         <Services/>
         <HeroParallaxDemo/>
         <ContactCard/>
-        <Footer/>
     </NextUIProvider>
   );
 }

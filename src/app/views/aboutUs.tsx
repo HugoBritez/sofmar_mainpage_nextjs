@@ -1,3 +1,6 @@
+"use client";
+
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { Users, Target, Eye, Zap, Shield, Users as UsersIcon, Lightbulb, Heart, Globe } from 'lucide-react';
@@ -187,7 +190,7 @@ export default function AboutUsSection(): JSX.Element {
         >
           <h3 className="text-4xl font-bold mb-8">Nuestro Equipo</h3>
           <div className="flex flex-wrap justify-center gap-8">
-            <TeamMember name="Ing. Ramon Duarte" position="Desarrollo" />
+            <TeamMember name="Ing. Ramon Duarte" position="Comercial" />
             <TeamMember name="Lic. Nelson Quintana" position="Desarrollo" />
             <TeamMember name="Lic. Ezequiel Portillo" position="Desarrollo" />
             <TeamMember name="Ing. Marcelo Galeano" position="Soporte de redes y servidores" />

@@ -1,3 +1,5 @@
+"use client";
+
 import '@/app/globals.css';
 import AnimatedBg from "@/modules/animated_bg";
 import Image from 'next/image';
@@ -88,7 +90,6 @@ const About: React.FC<AboutProps> = ({ images }) => {
         {/* Llamado a la acción */}
         <ContactCard />
       </div>
-      <Footer />
       <AnimatedBg/>
     </section>
   );
